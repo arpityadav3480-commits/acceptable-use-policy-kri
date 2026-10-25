@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" font-family="Segoe UI, Arial, sans-serif">
+  <title>Figure 1 — Incident reporting and breach escalation process (KRI-ISP-001)</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2F5D8A"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #EEF3FA; stroke: #2F5D8A; stroke-width: 2; }
+    .side { fill: #FFFFFF; stroke: #2F5D8A; stroke-width: 1.5; stroke-dasharray: 6 4; }
+    .line { stroke: #2F5D8A; stroke-width: 2; fill: none; }
+    .dash { stroke: #2F5D8A; stroke-width: 1.5; fill: none; stroke-dasharray: 6 4; }
+    .t { fill: #1A2B3C; font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .b { fill: #1A2B3C; font-size: 13px; text-anchor: middle; }
+    .lt { fill: #1A2B3C; font-size: 14px; font-weight: 700; text-anchor: middle; }
+    .st { fill: #1A2B3C; font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .sb { fill: #1A2B3C; font-size: 12px; text-anchor: middle; }
+  </style>
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+
+  <!-- A: noticed -->
+  <rect class="box" x="240" y="20" width="520" height="64" rx="10"/>
+  <text class="t" x="500" y="46">Incident or policy breach noticed</text>
+  <text class="b" x="500" y="69">by a user, a monitoring alert or an audit</text>
+  <line class="line" x1="500" y1="84" x2="500" y2="110" marker-end="url(#arrow)"/>
+
+  <!-- B: report -->
+  <rect class="box" x="240" y="112" width="520" height="96" rx="10"/>
+  <text class="t" x="500" y="136">Report it</text>
+  <text class="b" x="500" y="158">Urgent (account compromise, lost device, data leak): within 1 hour</text>
+  <text class="b" x="500" y="177">IT Helpdesk ext. 4400 + security@kestrelwood.example</text>
+  <text class="b" x="500" y="196">Other concerns: within 1 working day</text>
+  <line class="line" x1="500" y1="208" x2="500" y2="234" marker-end="url(#arrow)"/>
+
+  <!-- C: triage -->
+  <rect class="box" x="240" y="236" width="520" height="70" rx="10"/>
+  <text class="t" x="500" y="263">ISL triage — within 1 working day</text>
+  <text class="b" x="500" y="287">Confirm facts · contain the risk · assign a provisional level</text>
+
+  <!-- Side: external notification -->
+  <line class="dash" x1="760" y1="271" x2="788" y2="271" marker-end="url(#arrow)"/>
+  <rect class="side" x="790" y="216" width="195" height="112" rx="8"/>
+  <text class="st" x="887" y="240">External notification?</text>
+  <text class="sb" x="887" y="262">Decided by the ISL and</text>
+  <text class="sb" x="887" y="279">Executive Director:</text>
+  <text class="sb" x="887" y="296">CERT-In (6 h), DPDP Board,</text>
+  <text class="sb" x="887" y="313">funders and partners</text>
+
+  <line class="line" x1="500" y1="306" x2="500" y2="328" marker-end="url(#arrow)"/>
+
+  <!-- Decision -->
+  <polygon points="500,330 610,375 500,420 390,375" fill="#FFFFFF" stroke="#2F5D8A" stroke-width="2"/>
+  <text class="lt" x="500" y="380">Breach level?</text>
+
+  <!-- bus to levels -->
+  <polyline class="line" points="500,420 500,440"/>
+  <polyline class="line" points="130,440 870,440"/>
+  <line class="line" x1="130" y1="440" x2="130" y2="460" marker-end="url(#arrow)"/>
+  <line class="line" x1="375" y1="440" x2="375" y2="460" marker-end="url(#arrow)"/>
+  <line class="line" x1="625" y1="440" x2="625" y2="460" marker-end="url(#arrow)"/>
+  <line class="line" x1="870" y1="440" x2="870" y2="460" marker-end="url(#arrow)"/>
+
+  <!-- Level 1 -->
+  <rect x="20" y="462" width="220" height="120" rx="10" fill="#E6F4EA" stroke="#2E7D32" stroke-width="2"/>
+  <text class="lt" x="130" y="487">Level 1 — Minor</text>
+  <text class="b" x="130" y="510">Line manager / PI,</text>
+  <text class="b" x="130" y="528">with ISL guidance</text>
+  <text class="b" x="130" y="550">Coaching and</text>
+  <text class="b" x="130" y="568">refresher training</text>
+
+  <!-- Level 2 -->
+  <rect x="265" y="462" width="220" height="120" rx="10" fill="#FFF8E1" stroke="#B7860B" stroke-width="2"/>
+  <text class="lt" x="375" y="487">Level 2 — Moderate</text>
+  <text class="b" x="375" y="510">Manager + ISL;</text>
+  <text class="b" x="375" y="528">HR informed</text>
+  <text class="b" x="375" y="550">Written warning, training,</text>
+  <text class="b" x="375" y="568">temporary access limits</text>
+
+  <!-- Level 3 -->
+  <rect x="515" y="462" width="220" height="120" rx="10" fill="#FFF0E0" stroke="#D2691E" stroke-width="2"/>
+  <text class="lt" x="625" y="487">Level 3 — Serious</text>
+  <text class="b" x="625" y="510">HR disciplinary process;</text>
+  <text class="b" x="625" y="528">Executive Director informed</text>
+  <text class="b" x="625" y="550">Suspension, final warning,</text>
+  <text class="b" x="625" y="568">end of placement/contract</text>
+
+  <!-- Level 4 -->
+  <rect x="760" y="462" width="220" height="120" rx="10" fill="#FDECEA" stroke="#C62828" stroke-width="2"/>
+  <text class="lt" x="870" y="487">Level 4 — Critical</text>
+  <text class="b" x="870" y="510">Executive Director,</text>
+  <text class="b" x="870" y="528">HR and legal adviser</text>
+  <text class="b" x="870" y="550">Dismissal, police referral,</text>
+  <text class="b" x="870" y="568">legal action</text>
+
+  <!-- merge -->
+  <polyline class="line" points="130,582 130,600"/>
+  <polyline class="line" points="375,582 375,600"/>
+  <polyline class="line" points="625,582 625,600"/>
+  <polyline class="line" points="870,582 870,600"/>
+  <polyline class="line" points="130,600 870,600"/>
+  <line class="line" x1="500" y1="600" x2="500" y2="626" marker-end="url(#arrow)"/>
+
+  <!-- E: fair process -->
+  <rect class="box" x="240" y="628" width="520" height="64" rx="10"/>
+  <text class="t" x="500" y="653">Fair process</text>
+  <text class="b" x="500" y="676">User told the allegation and heard · appeal within 10 working days</text>
+  <line class="line" x1="500" y1="692" x2="500" y2="718" marker-end="url(#arrow)"/>
+
+  <!-- F: lessons -->
+  <rect class="box" x="240" y="720" width="520" height="64" rx="10"/>
+  <text class="t" x="500" y="745">Lessons learned</text>
+  <text class="b" x="500" y="768">ISL updates controls, training and this policy</text>
+</svg>

@@ -1,0 +1,18 @@
+# Task assignment sheet — contains personal contact details, never commit
+*.xlsx
+
+# Intermediate build output
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# Word / Office temporary files
+~$*
+*.tmp
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
