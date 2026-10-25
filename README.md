@@ -56,7 +56,6 @@ The policy is written for **Kestrelwood Research Institute (KRI)**, a *fictional
 ├── checklists/      Onboarding and annual review checklists
 ├── evaluation/      Output of the automated policy checks
 ├── screenshots/     Page previews of the final PDFs
-├── video/           Narration script for the explanatory video
 └── tools/           Build and check scripts
 ```
 
@@ -120,7 +119,7 @@ python tools/policy_check.py
 # Rebuild DOCX and PDF from the Markdown sources (uses Microsoft Word)
 python tools/build_docs.py
 
-# Rebuild the explanatory video from the screen recording and narration (needs ffmpeg; see video/video-script.md)
+# Rebuild the explanatory video from the screen recording and narration (needs ffmpeg)
 python tools/build_video.py
 ```
 
@@ -128,7 +127,7 @@ python tools/build_video.py
 
 **Video link:** [Watch on Google Drive](https://drive.google.com/file/d/1AelLUOuaCpB3-HJONwX6H2OoGNcrfn84/view?usp=sharing)
 
-The video explains the task, why acceptable-use policies matter, the approach taken, a walkthrough of the policy and supporting material, the evaluation results, and the limitations. The script is in [`video/video-script.md`](video/video-script.md).
+The video explains the task, why acceptable-use policies matter, the approach taken, a walkthrough of the policy and supporting material, the evaluation results, and the limitations.
 
 ## ⚠️ Disclaimer
 

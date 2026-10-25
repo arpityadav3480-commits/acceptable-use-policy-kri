@@ -1,7 +1,7 @@
 """Build the explanatory video from the screen recording and the recorded narration.
 
 Pipeline: video/raw.mp4 (silent screen recording) + video/audio/*.m4a (one narration file per
-section of video/video-script.md) --(ffmpeg)--> video/final.mp4
+section, named as in sections() below) --(ffmpeg)--> video/final.mp4
 
 Each section of the recording is sped up or slowed down to fit the length of its narration. Parts
 missing from the recording (policy Sections 11-13 with Figures 1 and 2, and the policy check run)
@@ -212,7 +212,7 @@ def find_audio(folder, name):
         stem = simple(path.stem)
         if path.suffix.lower() in AUDIO_EXT and stem in (simple(name), simple(label), number):
             return path
-    sys.exit(f"Missing narration: {folder / name}.m4a (see video/video-script.md)")
+    sys.exit(f"Missing narration: {folder / name}.m4a")
 
 
 def peak_db(path):
