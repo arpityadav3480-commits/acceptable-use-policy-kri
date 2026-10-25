@@ -135,6 +135,7 @@ def main() -> int:
               f"against `policy/KRI-Acceptable-Use-Policy.md`.\n\n**Overall: {status}**\n")
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(header + "\n" + "\n".join(results) + "\n", encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252
     print(OUT.read_text(encoding="utf-8"))
     return 1 if failures else 0
 

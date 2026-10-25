@@ -16,3 +16,8 @@ __pycache__/
 Thumbs.db
 .DS_Store
 .vscode/
+
+# Video recordings — too large for GitHub; upload to YouTube/Drive instead
+video/*.mp4
+video/*.mkv
+video/audio/
